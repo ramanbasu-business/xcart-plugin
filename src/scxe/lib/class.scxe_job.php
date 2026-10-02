@@ -117,9 +117,9 @@ class scxe_job
     {
         $submittedon = preg_replace('/[^0-9:\- ]/', '', (string) $submittedon);
         $processedon = $processedon === null ? null : preg_replace('/[^0-9:\- ]/', '', (string) $processedon);
-        $localfilename = preg_replace('/[^A-Za-z0-9_\-\.\\\/]/', '', (string) $localfilename);
-        $logfilename = preg_replace('/[^A-Za-z0-9_\-\.\\\/]/', '', (string) $logfilename);
-        $module = preg_replace('/[^A-Za-z0-9_\-]/', '', (string) $module);
+        $localfilename = preg_replace('#[^A-Za-z0-9_\\./]#', '', (string) $localfilename);
+        $logfilename = preg_replace('#[^A-Za-z0-9_\\./]#', '', (string) $logfilename);
+        $module = preg_replace('#[^A-Za-z0-9_-]#', '', (string) $module);
         $status = max(0, (int) $status);
 
         $query = "INSERT INTO job (id, submittedon, processedon, localfilename, status, logfilename, module) ";
@@ -149,7 +149,7 @@ class scxe_job
 
     public function getOneSubmittedJob($module)
     {
-        $module = $module === null ? null : preg_replace('/[^A-Za-z0-9_\-]/', '', (string) $module);
+        $module = $module === null ? null : preg_replace('#[^A-Za-z0-9_-]#', '', (string) $module);
 
         if ($module == null) {
             $jobRow = $this->db_select("SELECT * FROM job WHERE status in (0,1) ORDER BY submittedon ASC LIMIT 0,1");

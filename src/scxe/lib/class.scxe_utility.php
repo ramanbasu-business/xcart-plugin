@@ -135,7 +135,7 @@ class scxe_utility {
         //
         
         // ---- 2.2.0.0 -- First decode the text
-        $text = utf8_decode($text);
+        $text = mb_convert_encoding($text, 'ISO-8859-1', 'UTF-8');
         
         //2) Translation CP1252. &ndash; => -
         $trans = array();
@@ -195,7 +195,7 @@ class scxe_utility {
          */
 
         // ---- 2.2.0.0 -- encode again and return
-        return utf8_encode($text);
+        return mb_convert_encoding($text, 'UTF-8', 'ISO-8859-1');
     }
 
     public static function printHeader()

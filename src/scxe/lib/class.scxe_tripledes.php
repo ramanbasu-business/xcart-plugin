@@ -19,13 +19,13 @@ class scxe_tripledes {
 
     function __construct() {
         $Password = "";
-        $this->bPassword = md5(utf8_encode($Password), TRUE);
+        $this->bPassword = md5($Password, TRUE);
         $this->bPassword .= substr($this->bPassword, 0, 8);
         $this->sPassword = $Password;
     }
 
     function setSalt($salt) {
-        $this->bPassword = md5(utf8_encode($salt), TRUE);
+        $this->bPassword = md5($salt, TRUE);
         $this->bPassword .= substr($this->bPassword, 0, 8);
         $this->sPassword = $salt;
     }

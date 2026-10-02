@@ -1,0 +1,16 @@
+{
+  "name": "ramanbasu-business/xcart-plugin",
+  "description": "Legacy X-Cart SellerCloud integration plugin tests",
+  "type": "project",
+  "require-dev": {
+    "phpunit/phpunit": "^11.2"
+  },
+  "autoload": {
+    "classmap": [
+      "src/scxe/lib/"
+    ]
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

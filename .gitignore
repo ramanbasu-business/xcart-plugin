@@ -2,5 +2,10 @@
 CLAUDE.md
 .claude/
 
+# PHP test/build artifacts
+/vendor/
+.phpunit.cache/
+.phpunit.result.cache
+
 # macOS noise
 .DS_Store
