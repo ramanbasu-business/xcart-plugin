@@ -1,6 +1,6 @@
 {
     "name": "ramanbasu-business/xcart-plugin",
-    "description": "Legacy X-Cart SellerCloud integration plugin tests",
+    "description": "Legacy X-Cart catalog sync plugin tests",
     "type": "project",
     "require-dev": {
         "phpunit/phpunit": "^11.2"

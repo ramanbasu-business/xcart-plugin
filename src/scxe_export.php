@@ -1,7 +1,7 @@
 <?php
 
 /**
- * SellerCloud Export Plugin
+ * Legacy X-Cart catalog export plugin
  *
  * @category   X-Cart
  * @package    X-Cart

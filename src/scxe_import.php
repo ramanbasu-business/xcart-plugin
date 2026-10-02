@@ -1,6 +1,6 @@
 <?php
 /**
- * SellerCloud Export Plugin
+ * Legacy X-Cart catalog import plugin
  *
  * @category   X-Cart
  * @package    X-Cart
@@ -59,7 +59,7 @@ include $_module_dir . 'index.php';
 function install() {
     $jobObject=new scxe_job();
     $jobObject->installPlugin();
-    echo 'SCXE plugin for SellerCloud has been installed successfully';
+    echo 'SCXE plugin installed successfully';
     unset($jobObject);
 }
 

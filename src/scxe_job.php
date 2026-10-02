@@ -1,7 +1,7 @@
 <?php
 
 /**
- * SellerCloud Export Plugin
+ * Legacy X-Cart job queue entry point
  *
  * @category   X-Cart
  * @package    X-Cart

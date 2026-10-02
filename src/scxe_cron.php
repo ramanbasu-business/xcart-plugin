@@ -1,6 +1,6 @@
 <?php
 /**
- * SellerCloud Export Plugin
+ * Legacy X-Cart cron job runner
  *
  * @category   X-Cart
  * @package    X-Cart

@@ -1,10 +1,10 @@
-# X-Cart SellerCloud Sync Plugin
+# X-Cart Catalog Sync Plugin
 
 A legacy X-Cart 5 integration plugin that exposes XML-based import and export endpoints for catalog, pricing, inventory, shipping, and order data. The plugin authenticates an X-Cart admin session and uses a queue table plus cron entry points to process import jobs.
 
 ## Objective
 
-This repository contains the historical code for a SellerCloud-to-X-Cart integration. It exports product, category, order, shipping and inventory information in XML format and can import product XML back into the X-Cart catalog.
+This repository contains historical code for an X-Cart catalog synchronization integration. It exports product, category, order, shipping and inventory information in XML format and can import product XML back into the X-Cart catalog.
 
 The code is intentionally limited to the legacy platform integration pattern used by X-Cart 5:
 
