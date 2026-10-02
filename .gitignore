@@ -1,0 +1,6 @@
+# Local project instruction files
+CLAUDE.md
+.claude/
+
+# macOS noise
+.DS_Store

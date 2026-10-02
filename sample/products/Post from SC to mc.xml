@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<products>
+<product>
+<productcode>BA-200-HA-RD</productcode>
+<product>Bandanas, Harley Davidson, Righteous Ruler, Red</product>
+<clean_url>BA-200-HA-RD</clean_url>
+<weight>0</weight>
+<price>9.9</price>
+<list_price>0</list_price>
+<descr>short description: some data about Bandanas, Harley Davidson, Righteous Ruler, Red</descr>
+<fulldescr>&lt;div&gt;The stylish Harely Davidson bandana keeps you looking cool and you stay cool at the same time. The light comfortable fabric is super.&lt;/div&gt; &lt;div&gt; &lt;ul&gt; &lt;li&gt;1 Dozen&lt;/li&gt; &lt;li&gt;Made in the USA&lt;/li&gt; &lt;li&gt;Poly/Cotton&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt; &lt;/div&gt;</fulldescr>
+<keywords>test, BA-200-HA-RD</keywords>
+<title_tag>title tag for BA-200-HA-RD</title_tag>
+<meta_keywords>meta for BA-200-HA-RD</meta_keywords>
+<meta_description>meta description for BA-200-HA-RD</meta_description>
+<avail>194</avail>
+<rating>0</rating>
+<forsale>Y</forsale>
+<shipping_freight>0</shipping_freight>
+<free_shipping>Y</free_shipping>
+<discount_avail>Y</discount_avail>
+<min_amount>1</min_amount>
+<length>0</length>
+<width>0</width>
+<height>20</height>
+<low_avail_limit>0</low_avail_limit>
+<free_tax>N</free_tax>
+<categories>
+	<categoryid>75</categoryid>
+</categories>
+<pos>0</pos>
+<membership></membership>
+<tax>WBST</tax>
+<views_stats>0</views_stats>
+<del_stats>0</del_stats>
+<small_item>N</small_item>
+<separate_box></separate_box>
+<items_per_box>1</items_per_box>
+<return_time>0</return_time>
+<on_sale>N</on_sale>
+<mark_as_new default="N">Y</mark_as_new>
+<date_period>S</date_period>
+<product_type default="N">N</product_type>
+<manufacturerid>0</manufacturerid>
+<manufacturer>Unknown</manufacturer>
+<generate_thumbnail>Y</generate_thumbnail>
+<image>http://tr.cwa.sellercloud.com/images/products/BA-200-HA-RD/b90cdc59-a68f-4f4e-872d-026ea9e94e99.jpg</image>
+<!--<image>http://tr.cwa.sellercloud.com/images/products/BA-200-HA-RD/a692592b-0b44-42bd-a324-507191072dbd.jpg</image>-->
+</product>
+
+</products>

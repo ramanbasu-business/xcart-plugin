@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<orders module="shipping">
+
+  <order>
+    <orderid>00010</orderid>
+    <carrier_code>FEDEX</carrier_code>
+    <!--<carrier_subcode><![CDATA[UPS Next Day Air&reg;]]></carrier_subcode>-->
+    <!--<carrier_subcode><![CDATA[FedEx Ground<sup>&reg;</sup>]]></carrier_subcode>-->
+    <carrier_subcode><![CDATA[FEDEX_GROUND]]></carrier_subcode>
+    <number>00011-00-SDS</number>
+    <comment>no comment</comment>
+    <shipment_date>2021-09-29 12:25:31</shipment_date>
+  </order>
+
+</orders>

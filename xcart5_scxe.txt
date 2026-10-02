@@ -1,0 +1,72 @@
+ADMIN:
+http://www.localhost.com/xc5/admin.php
+ramanbasu@hotmail.com
+dalal123
+
+Your auth code for running install.php in the future is: B9A6M2SY 
+PLEASE WRITE THIS CODE DOWN IN CASE YOU ARE GOING TO REMOVE "install.21c4cb7e7d72084076f9e39f6af66fbd.php"
+=========================================
+
+Configuring background job queue
+===============================
+https://kb.x-cart.com/general_setup/configuring_queues.html
+
+Execute jobs in queue:
+http://www.localhost.com/xc5/admin.php?target=jobs
+-----------------------------------------------------
+
+
+INSTALL:
+http://www.localhost.com/xc5/scxe_import.php?method=install&u=ramanbasu@hotmail.com&p=dalal123
+
+ORDERS
+=========
+http://www.localhost.com/xc5/scxe_export.php?method=orders&u=ramanbasu@hotmail.com&p=dalal123&&orderid=5
+http://www.localhost.com/xc5/scxe_export.php?method=orders&u=ramanbasu@hotmail.com&p=dalal123&from=2013-07-23&to=2018-07-23
+
+CATEGORIES
+=========
+http://www.localhost.com/xc5/scxe_export.php?method=categories&u=ramanbasu@hotmail.com&p=dalal123
+
+ORDER STATUSES
+==============
+http://www.localhost.com/xc5/scxe_export.php?method=orderstatus&u=ramanbasu@hotmail.com&p=dalal123
+
+Shipping List
+=============
+http://www.localhost.com/xc5/scxe_export.php?method=shippinglist&u=ramanbasu@hotmail.com&p=dalal123
+
+PRODUCTS
+========
+* currentpageindex starts from 1, 0 internally.
+
+http://www.localhost.com/xc5/scxe_export.php?method=products&currentpageindex=1&rowsperpage=5&u=ramanbasu@hotmail.com&p=dalal123
+
+http://www.localhost.com/xc5/scxe_export.php?method=products&currentpageindex=1&rowsperpage=5&u=ramanbasu@hotmail.com&p=dalal123&sku=12024
+
+INVPRICE(For active listing download)
+========
+http://www.localhost.com/xc5/scxe_export.php?method=invprice&u=ramanbasu@hotmail.com&p=dalal123
+
+JOB
+====
+http://www.localhost.com/xc5/scxe_job.php?method=getjob&id=1&ignorelogin=1
+-- with Login
+http://www.localhost.com/xc5/scxe_job.php?method=getjob&id=1&u=ramanbasu@hotmail.com&p=dalal123
+
+CRON
+====
+http://www.localhost.com/xc5/scxe_cron.php
+http://www.localhost.com/xc5/scxe_cron.php?id=21
+
+IMPORT
+======
+http://www.localhost.com/xc5/scxe_import.php?&u=ramanbasu@hotmail.com&p=dalal123
+    
+    TEST IMPORT
+    ===========
+    http://www.localhost.com/xc5/scxe_import.php?method=testimport&verbose=1
+
+IMPORT LOG
+==========
+http://www.localhost.com/sc5/files/scxe_log/import-xml-180914150250.xml

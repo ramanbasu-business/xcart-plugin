@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<products>
+<product>
+    <productcode>MPX020</productcode>
+    <product>MPX020 binod product</product>
+    <weight>0</weight>
+    <!-- 0 for config-->
+    <price>0</price>
+    <list_price>200</list_price>
+    <!-- List price (market price) ($) -->
+    <descr>You know whats sucky about regular flashlights. They only come in two colors: white or that yellowish-white that reminds us of the teeth of an avid coffee drinker. What fun is that kind of flashlight Well answer that: NO FUN AT ALL. Using the Multi-Color LED Flashlight to cast a sickly green glow over your face while telling a zombie story around a campfire. No campfire, Make a fake one with the orange light</descr>
+    <fulldescr>yes</fulldescr>
+    <keywords>MPX020</keywords>
+    <title_tag>MPX020</title_tag>
+    <meta_keywords>MPX020</meta_keywords>
+    <meta_description>yes</meta_description>
+    <avail>100</avail>
+    <rating>0</rating>
+    <forsale>Y</forsale>
+    <!-- {'Y','N','B','H'{"H": Hidden, but available for sale}} {{"N" : Disabled}} -->
+    <shipping_freight>0</shipping_freight>
+    <free_shipping>Y</free_shipping>
+    <discount_avail>Y</discount_avail>
+    <min_amount>1</min_amount>
+    <!-- Minimum order quantity -->
+    <length>0</length>
+    <width>0</width>
+    <height>0</height>
+    <low_avail_limit>10</low_avail_limit>
+    <!-- Low limit in stock -->
+    <free_tax>N</free_tax>
+    <categories>
+      <categoryid>105</categoryid>
+      <categoryid>106</categoryid>
+    </categories>
+    <pos>0</pos>
+    <membership></membership>
+    <tax>WBST</tax>
+    <views_stats>0</views_stats>
+    <del_stats>0</del_stats>
+    <small_item>N</small_item>
+    <!-- Use the dimensions of this product for shipping cost calculation -->
+    <separate_box></separate_box>
+    <items_per_box>1</items_per_box>
+    <return_time>0</return_time>
+    <!-- Product return time (days): -->
+    <on_sale>N</on_sale>
+
+    <mark_as_new default="N">Y</mark_as_new>
+    <date_period>A</date_period>
+    <!-- S=Specific date, A=Always -->
+    <show_as_new_from>2013-06-26T22:45:56-07:00</show_as_new_from>
+    <show_as_new_to>2013-07-27T23:59:59-07:00</show_as_new_to>
+
+    <product_type default="N">N</product_type>
+    <manufacturerid></manufacturerid>
+    <manufacturer>Proline</manufacturer>
+    <image>http://www.shoe-tease.com/wp-content/uploads/2011/09/poetic-licence-love-rush-purple-bootie-large-size.jpg</image>
+    <generate_thumbnail>Y</generate_thumbnail>
+    <!--<gallery_image>http://furbo.org/wp-content/uploads/2007/08/coda_icon.jpg</gallery_image>
+    <gallery_image>http://i.istockimg.com/file_thumbview_approve/12389045/2/stock-illustration-12389045-leaf-icon-set.jpg</gallery_image>
+    -->
+    <product_options>
+      <product_option>
+        <class>Color2</class>
+        <type></type>
+        <!--T,A -->
+        <classtext>Choose Color</classtext>
+        <orderby>1</orderby>
+        <avail>Y</avail>
+
+        <option>
+          <option_name>Red</option_name>
+          <price_modifier>0</price_modifier>
+          <modifier_type></modifier_type>
+          <option_orderby>1</option_orderby>
+          <option_avail>Y</option_avail>
+        </option>
+        <option>
+          <option_name>Green</option_name>
+          <price_modifier>0</price_modifier>
+          <modifier_type></modifier_type>
+          <option_orderby>2</option_orderby>
+          <option_avail>Y</option_avail>
+        </option>
+
+
+      </product_option>
+
+
+
+    </product_options>
+    <variants>
+      <variant>
+        <productcode>MPX010_1</productcode>
+        <weight>11</weight>
+        <avail>100</avail>
+        <default>Y</default>
+        <!--<image>http://www.womanaroundtown.com/wp-content/uploads/2010/10/shoe-store-520x344.jpg</image>-->
+        <option>Red</option>
+        <price>1.10</price>
+      </variant>
+      <variant>
+        <productcode>MPX010_2</productcode>
+        <weight>12</weight>
+        <avail>100</avail>
+        <default>N</default>
+        <!--<image>http://www.healingfeet.com/blog/wp-content/uploads/2012/02/women-trying-shoes.jpg</image>-->
+        <option>Green</option>
+
+        <price>1.20</price>
+      </variant>
+
+
+    </variants>
+
+  </product>
+</products>

@@ -1,0 +1,707 @@
+<?xml version="1.0"?>
+<products>
+  
+  
+  <product>
+    <productcode>SP001</productcode>
+    <product>SP001 Test Product</product>
+    <clean_url>sp001-test-product</clean_url>
+    <weight>25</weight>
+    <!-- 0 for config-->
+    <price>1.25</price>
+    <list_price>2.00</list_price>
+    <!-- List price (market price) ($) -->
+    <descr>SP001 Product description</descr>
+    <fulldescr>SP001 Full Product description</fulldescr>
+    <keywords>Test</keywords>
+    <title_tag>SP001 Test Product title</title_tag>
+    <meta_keywords>Test</meta_keywords>
+    <meta_description>SP001 product</meta_description>
+    <avail>10</avail>
+    <rating>0</rating>
+    <forsale>Y</forsale><!-- 'Y','N','B','H'{{"H": Hidden, but available for sale}} {{"N" : Disabled}} -->
+    <shipping_freight>0</shipping_freight>
+    <free_shipping>Y</free_shipping>
+    <discount_avail>Y</discount_avail>
+    <min_amount>1</min_amount>
+    <!-- Minimum order quantity -->
+    <length>10</length>
+    <width>15</width>
+    <height>20</height>
+    <low_avail_limit>10</low_avail_limit>
+    <!-- Low limit in stock -->
+    <free_tax>N</free_tax>
+    <categories>
+      <categoryid>5</categoryid>
+      <categoryid>6</categoryid>
+    </categories>
+    <pos>0</pos>
+    <membership></membership>
+    <tax>WBST</tax>
+    <views_stats>0</views_stats>
+    <del_stats>0</del_stats>
+    <small_item>N</small_item>
+    <!-- Use the dimensions of this product for shipping cost calculation -->
+    <separate_box></separate_box>
+    <items_per_box>1</items_per_box>
+    <return_time>0</return_time><!-- Product return time (days): -->
+    <on_sale>N</on_sale>
+    <mark_as_new default="N">Y</mark_as_new>
+    <date_period>S</date_period>
+    <show_as_new_from>2013-06-26T22:45:56-07:00</show_as_new_from>
+    <show_as_new_to>2013-07-27T23:59:59-07:00</show_as_new_to>
+    <product_type default="N">N</product_type>
+    <manufacturerid>0</manufacturerid> <!-- either manufacturerid or manufacturer works -->
+    <manufacturer>Nyke</manufacturer>
+    <generate_thumbnail>Y</generate_thumbnail>
+    <image>http://www.shoe-tease.com/wp-content/uploads/2011/09/martin-margiela-red-ankle-boots-fall-2011-netaporter-985.jpeg</image>
+    <!--<thumbnail>http://help.x-cart.com/xc_logo_v.png</thumbnail>
+    -->
+    <additional_attributes>
+	<associativeentity>
+	    <service_name>servicename_extrafield1</service_name>
+	    <field>Test Service Name Extrafield 1</field>
+	    <value>XL</value>
+	</associativeentity>
+	<associativeentity>
+	    <service_name>servicename_extrafield2</service_name>
+	    <field>Test Service Name Extrafield 2</field>
+	    <value>Lucas Blue</value>
+	</associativeentity>
+    </additional_attributes>
+  </product>
+  
+  <product>
+    <productcode>SP002</productcode>
+    <product>SP002 Test Product</product>
+    <clean_url>sp002-test-product</clean_url>
+    <weight>35</weight>
+    <!-- 0 for config-->
+    <price>1.25</price>
+    <list_price>2.00</list_price>
+    <!-- List price (market price) ($) -->
+    <descr>SP002 Product description</descr>
+    <fulldescr>SP002 Full Product description</fulldescr>
+    <keywords>Test</keywords>
+    <title_tag>SP002 Test Product title</title_tag>
+    <meta_keywords>Test</meta_keywords>
+    <meta_description>SP002 product</meta_description>
+    <avail>10</avail>
+    <rating>0</rating>
+    <forsale>Y</forsale><!-- 'Y','N','B','H'{{"H": Hidden, but available for sale}} {{"N" : Disabled}} -->
+    <shipping_freight>0</shipping_freight>
+    <free_shipping>Y</free_shipping>
+    <discount_avail>Y</discount_avail>
+    <min_amount>1</min_amount>
+    <!-- Minimum order quantity -->
+    <length>10</length>
+    <width>15</width>
+    <height>20</height>
+    <low_avail_limit>10</low_avail_limit>
+    <!-- Low limit in stock -->
+    <free_tax>N</free_tax>
+    <categories>
+      <categoryid>5</categoryid>
+      <categoryid>6</categoryid>
+    </categories>
+    <pos>0</pos>
+    <membership></membership>
+    <tax>WBST</tax>
+    <views_stats>0</views_stats>
+    <del_stats>0</del_stats>
+    <small_item>N</small_item>
+    <!-- Use the dimensions of this product for shipping cost calculation -->
+    <separate_box></separate_box>
+    <items_per_box>1</items_per_box>
+    <return_time>0</return_time><!-- Product return time (days): -->
+    <on_sale>N</on_sale>
+    <mark_as_new default="N">Y</mark_as_new>
+    <date_period>S</date_period>
+    <show_as_new_from>2013-06-26T22:45:56-07:00</show_as_new_from>
+    <show_as_new_to>2013-07-27T23:59:59-07:00</show_as_new_to>
+    <product_type default="N">N</product_type>
+    <manufacturerid>0</manufacturerid> <!-- either manufacturerid or manufacturer works -->
+    <manufacturer>Nyke</manufacturer>
+    <generate_thumbnail>Y</generate_thumbnail>
+    <image>http://www.shoe-tease.com/wp-content/uploads/2011/09/opening-ceremony-red-purple-clog-boot-wood.jpg</image>
+    <!--<thumbnail>http://help.x-cart.com/xc_logo_v.png</thumbnail> -->
+    <additional_attributes>
+	<associativeentity>
+	    <service_name>servicename_extrafield1</service_name>
+	    <field>Test Service Name Extrafield 1</field>
+	    <value>Value XL</value>
+	</associativeentity>
+	<associativeentity>
+	    <service_name>servicename_extrafield2</service_name>
+	    <field>Test Service Name Extrafield 2</field>
+	    <value>Value Lucas Blue</value>
+	</associativeentity>
+    </additional_attributes>
+  </product>
+  
+  
+  
+  <product>
+    <productcode>SP003</productcode>
+    <product>SP003 Test Product</product>
+    <clean_url>sp003-test-product</clean_url>
+    <weight>35</weight>
+    <!-- 0 for config-->
+    <price>1.25</price>
+    <list_price>2.00</list_price>
+    <!-- List price (market price) ($) -->
+    <descr>SP003 Product description</descr>
+    <fulldescr>SP003 Full Product description</fulldescr>
+    <keywords>Test</keywords>
+    <title_tag>SP003 Test Product title</title_tag>
+    <meta_keywords>Test</meta_keywords>
+    <meta_description>SP003 product</meta_description>
+    <avail>10</avail>
+    <rating>0</rating>
+    <forsale>Y</forsale><!-- 'Y','N','B','H'{{"H": Hidden, but available for sale}} {{"N" : Disabled}} -->
+    <shipping_freight>0</shipping_freight>
+    <free_shipping>Y</free_shipping>
+    <discount_avail>Y</discount_avail>
+    <min_amount>1</min_amount>
+    <!-- Minimum order quantity -->
+    <length>10</length>
+    <width>15</width>
+    <height>20</height>
+    <low_avail_limit>10</low_avail_limit>
+    <!-- Low limit in stock -->
+    <free_tax>N</free_tax>
+    <categories>
+      <categoryid>5</categoryid>
+      <categoryid>6</categoryid>
+    </categories>
+    <pos>0</pos>
+    <membership></membership>
+    <tax>WBST</tax>
+    <views_stats>0</views_stats>
+    <del_stats>0</del_stats>
+    <small_item>N</small_item>
+    <!-- Use the dimensions of this product for shipping cost calculation -->
+    <separate_box></separate_box>
+    <items_per_box>1</items_per_box>
+    <return_time>0</return_time><!-- Product return time (days): -->
+    <on_sale>N</on_sale>
+    <mark_as_new default="N">Y</mark_as_new>
+    <date_period>S</date_period>
+    <show_as_new_from>2013-06-26T22:45:56-07:00</show_as_new_from>
+    <show_as_new_to>2013-07-27T23:59:59-07:00</show_as_new_to>
+    <product_type default="N">N</product_type>
+    <manufacturerid>0</manufacturerid> <!-- either manufacturerid or manufacturer works -->
+    <manufacturer>Nyke</manufacturer>
+    <generate_thumbnail>Y</generate_thumbnail>
+    <image>http://www.shoe-tease.com/wp-content/uploads/2011/09/hush-puppies-kalista-bootie-red-purple-shoetease.jpg</image>
+    <!--<thumbnail>http://help.x-cart.com/xc_logo_v.png</thumbnail>
+    -->
+    <additional_attributes>
+	<associativeentity>
+	    <service_name>servicename_extrafield1</service_name>
+	    <field>Test Service Name Extrafield 1</field>
+	    <value>Value XL</value>
+	</associativeentity>
+	<associativeentity>
+	    <service_name>servicename_extrafield2</service_name>
+	    <field>Test Service Name Extrafield 2</field>
+	    <value>Value Lucas Blue</value>
+	</associativeentity>
+    </additional_attributes>
+  </product>
+  
+  <product>
+    <productcode>SP004</productcode>
+    <product>SP004 Test Product</product>
+    <clean_url>sp004-test-product</clean_url>
+    <weight>35</weight>
+    <!-- 0 for config-->
+    <price>1.25</price>
+    <list_price>2.00</list_price>
+    <!-- List price (market price) ($) -->
+    <descr>SP004 Product description</descr>
+    <fulldescr>SP004 Full Product description</fulldescr>
+    <keywords>Test</keywords>
+    <title_tag>SP004 Test Product title</title_tag>
+    <meta_keywords>Test</meta_keywords>
+    <meta_description>SP003 product</meta_description>
+    <avail>10</avail>
+    <rating>0</rating>
+    <forsale>Y</forsale><!-- 'Y','N','B','H'{{"H": Hidden, but available for sale}} {{"N" : Disabled}} -->
+    <shipping_freight>0</shipping_freight>
+    <free_shipping>Y</free_shipping>
+    <discount_avail>Y</discount_avail>
+    <min_amount>1</min_amount>
+    <!-- Minimum order quantity -->
+    <length>10</length>
+    <width>15</width>
+    <height>20</height>
+    <low_avail_limit>10</low_avail_limit>
+    <!-- Low limit in stock -->
+    <free_tax>N</free_tax>
+    <categories>
+      <categoryid>5</categoryid>
+      <categoryid>6</categoryid>
+    </categories>
+    <pos>0</pos>
+    <membership></membership>
+    <tax>WBST</tax>
+    <views_stats>0</views_stats>
+    <del_stats>0</del_stats>
+    <small_item>N</small_item>
+    <!-- Use the dimensions of this product for shipping cost calculation -->
+    <separate_box></separate_box>
+    <items_per_box>1</items_per_box>
+    <return_time>0</return_time><!-- Product return time (days): -->
+    <on_sale>N</on_sale>
+    <mark_as_new default="N">Y</mark_as_new>
+    <date_period>S</date_period>
+    <show_as_new_from>2013-06-26T22:45:56-07:00</show_as_new_from>
+    <show_as_new_to>2013-07-27T23:59:59-07:00</show_as_new_to>
+    <product_type default="N">N</product_type>
+    <manufacturerid>0</manufacturerid> <!-- either manufacturerid or manufacturer works -->
+    <manufacturer>Nyke</manufacturer>
+    <generate_thumbnail>Y</generate_thumbnail>
+    <image>http://www.shoe-tease.com/wp-content/uploads/2011/09/pretty-small-shoes-size-bootie-red-laced-shoetease.jpg</image>
+    <!--<thumbnail>http://help.x-cart.com/xc_logo_v.png</thumbnail>
+    -->
+    <additional_attributes>
+	<associativeentity>
+	    <service_name>servicename_extrafield1</service_name>
+	    <field>Test Service Name Extrafield 1</field>
+	    <value>Value XL</value>
+	</associativeentity>
+	<associativeentity>
+	    <service_name>servicename_extrafield2</service_name>
+	    <field>Test Service Name Extrafield 2</field>
+	    <value>Value Lucas Blue</value>
+	</associativeentity>
+    </additional_attributes>
+  </product>
+  
+  <product>
+    <productcode>MPX001</productcode>
+    <product>MPX001 Test Product</product>
+    <clean_url>MPX001-test-product</clean_url>
+    <weight>0</weight>
+    <!-- 0 for config-->
+    <price>0</price>
+    <list_price>200</list_price> <!-- List price (market price) ($) -->
+    <descr>MPX001 Product description</descr>
+    <fulldescr>MPX001 Full Product description</fulldescr>
+    <keywords>Test</keywords>
+    <title_tag>Test Product title</title_tag>
+    <meta_keywords>Test</meta_keywords>
+    <meta_description>test product</meta_description>
+    <avail>100</avail>
+    <rating>0</rating>
+    <forsale>Y</forsale> <!-- {'Y','N','B','H'{"H": Hidden, but available for sale}} {{"N" : Disabled}} -->
+    <shipping_freight>0</shipping_freight>
+    <free_shipping>Y</free_shipping>
+    <discount_avail>Y</discount_avail>
+    <min_amount>1</min_amount><!-- Minimum order quantity -->
+    <length>0</length>
+    <width>0</width>
+    <height>0</height>
+    <low_avail_limit>10</low_avail_limit><!-- Low limit in stock -->
+    <free_tax>N</free_tax>
+    <categories>
+      <categoryid>105</categoryid>
+      <categoryid>106</categoryid>
+    </categories>
+    <pos>0</pos>
+    <membership></membership>
+    <tax>WBST</tax>
+    <views_stats>0</views_stats>
+    <del_stats>0</del_stats>
+    <small_item>N</small_item> <!-- Use the dimensions of this product for shipping cost calculation -->
+    <separate_box></separate_box>
+    <items_per_box>1</items_per_box>
+    <return_time>0</return_time><!-- Product return time (days): -->
+    <on_sale>N</on_sale>
+    
+    <mark_as_new default="N">Y</mark_as_new>
+    <date_period>A</date_period> <!-- S=Specific date, A=Always -->
+    <show_as_new_from>2013-06-26T22:45:56-07:00</show_as_new_from>
+    <show_as_new_to>2013-07-27T23:59:59-07:00</show_as_new_to>
+    
+    <product_type default="N">N</product_type>
+    <manufacturerid></manufacturerid>
+    <manufacturer>Proline</manufacturer>
+    <image>http://www.shoe-tease.com/wp-content/uploads/2011/09/poetic-licence-love-rush-purple-bootie-large-size.jpg</image>
+    <generate_thumbnail>Y</generate_thumbnail>
+    <!--<gallery_image>http://furbo.org/wp-content/uploads/2007/08/coda_icon.jpg</gallery_image>
+    <gallery_image>http://i.istockimg.com/file_thumbview_approve/12389045/2/stock-illustration-12389045-leaf-icon-set.jpg</gallery_image>
+    -->
+    <product_options>
+      <product_option>
+        <class>Color2</class>
+        <type></type><!--T,A -->
+        <classtext>Choose Color</classtext>
+        <orderby>1</orderby>
+        <avail>Y</avail>
+        
+          <option>
+            <option_name>Red</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>1</option_orderby>
+            <option_avail>Y</option_avail>
+          </option>
+          <option>
+            <option_name>Green</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>2</option_orderby>
+            <option_avail>Y</option_avail>
+          </option>
+          <option>
+            <option_name>Blue</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>3</option_orderby>
+            <option_avail>Y</option_avail>
+          </option>
+        
+      </product_option>
+
+      <product_option>
+        <class>Size2</class>
+        <type></type>
+        <classtext>Choose Size</classtext>
+        <orderby>2</orderby>
+        <avail>Y</avail>
+        
+          <option>
+            <option_name>L</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>1</option_orderby>
+            <option_avail>Y</option_avail>            
+          </option>
+          <option>
+            <option_name>XL</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>2</option_orderby>
+            <option_avail>Y</option_avail>            
+          </option>
+	  <option>
+            <option_name>XXL</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>3</option_orderby>
+            <option_avail>Y</option_avail>            
+          </option>
+      </product_option>
+
+    </product_options>
+    <variants>
+	<variant>
+	    <productcode>MPX001_1</productcode>
+	    <weight>11</weight>
+	    <avail>91</avail>
+	    <default>N</default>
+	    <!--<image>http://www.womanaroundtown.com/wp-content/uploads/2010/10/shoe-store-520x344.jpg</image>-->
+	    <option>Red</option>
+	    <option>L</option>
+	    <price>1.10</price>
+	</variant>
+	<variant>
+	  <productcode>MPX001_2</productcode>
+	  <weight>12</weight>
+	    <avail>92</avail>
+	    <default>N</default>
+	    <!--<image>http://www.healingfeet.com/blog/wp-content/uploads/2012/02/women-trying-shoes.jpg</image>-->
+	    <option>Red</option>
+	    <option>XL</option>
+	    <price>1.20</price>
+	</variant>
+	<variant>
+	    <productcode>MPX001_3</productcode>
+	    <weight>13</weight>
+	    <avail>93</avail>
+	    <default>N</default>
+	    <!--<image>http://www.shoesoftheday.nl/wp-content/uploads/2012/12/shopping_for_shoes_sbvqr.jpg</image>-->
+	    <option>Red</option>
+	    <option>XXL</option>
+	    <price>1.30</price>
+	</variant>
+	<variant>
+	  <productcode>MPX001_4</productcode>
+	    <weight>14</weight>
+	    <avail>94</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Green</option>
+	    <option>L</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX001_5</productcode>
+	    <weight>14</weight>
+	    <avail>95</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Green</option>
+	    <option>XL</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX001_6</productcode>
+	    <weight>14</weight>
+	    <avail>96</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Green</option>
+	    <option>XXL</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX001_7</productcode>
+	    <weight>14</weight>
+	    <avail>97</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Blue</option>
+	    <option>L</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX001_8</productcode>
+	    <weight>14</weight>
+	    <avail>98</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Blue</option>
+	    <option>XL</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX001_9</productcode>
+	    <weight>14</weight>
+	    <avail>99</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Blue</option>
+	    <option>XXL</option>
+	    <price>1.40</price>
+	</variant>
+    </variants>	    
+    
+    
+  </product>
+  
+  <product>
+    <productcode>MPX002</productcode>
+    <product>MPX002 Test Product</product>
+    <clean_url>MPX002-test-product</clean_url>
+    <weight>10</weight>
+    <!-- 0 for config-->
+    <price>0</price>
+    <list_price>100</list_price> <!-- List price (market price) ($) -->
+    <descr>MPX002 Product description</descr>
+    <fulldescr>MPX002 Full Product description</fulldescr>
+    <keywords>Test</keywords>
+    <title_tag>Test Product title</title_tag>
+    <meta_keywords>Test</meta_keywords>
+    <meta_description>test product</meta_description>
+    <avail>100</avail>
+    <rating>0</rating>
+    <forsale>Y</forsale> <!-- {'Y','N','B','H'{"H": Hidden, but available for sale}} {{"N" : Disabled}} -->
+    <shipping_freight>0</shipping_freight>
+    <free_shipping>Y</free_shipping>
+    <discount_avail>Y</discount_avail>
+    <min_amount>1</min_amount><!-- Minimum order quantity -->
+    <length>0</length>
+    <width>0</width>
+    <height>0</height>
+    <low_avail_limit>10</low_avail_limit><!-- Low limit in stock -->
+    <free_tax>N</free_tax>
+    <categories>
+      <categoryid>105</categoryid>
+      <categoryid>106</categoryid>
+    </categories>
+    <pos>0</pos>
+    <membership></membership>
+    <tax>WBST</tax>
+    <views_stats>0</views_stats>
+    <del_stats>0</del_stats>
+    <small_item>N</small_item> <!-- Use the dimensions of this product for shipping cost calculation -->
+    <separate_box></separate_box>
+    <items_per_box>1</items_per_box>
+    <return_time>0</return_time><!-- Product return time (days): -->
+    <on_sale>N</on_sale>
+    
+    <mark_as_new default="N">Y</mark_as_new>
+    <date_period>A</date_period> <!-- S=Specific date, A=Always -->
+    <show_as_new_from>2013-06-26T22:45:56-07:00</show_as_new_from>
+    <show_as_new_to>2013-07-27T23:59:59-07:00</show_as_new_to>
+    
+    <product_type default="N">N</product_type>
+    <manufacturerid></manufacturerid>
+    <manufacturer>Proline</manufacturer>
+    <image>http://www.shoe-tease.com/wp-content/uploads/2011/09/miz-mooz-tillman-red-bootie-straps-large-size-shoe.jpg</image>
+    <generate_thumbnail>Y</generate_thumbnail>
+    <!--<gallery_image>http://furbo.org/wp-content/uploads/2007/08/coda_icon.jpg</gallery_image>
+    <gallery_image>http://i.istockimg.com/file_thumbview_approve/12389045/2/stock-illustration-12389045-leaf-icon-set.jpg</gallery_image>
+    -->
+    <product_options>
+      <product_option>
+        <class>Color</class>
+        <type></type><!--T,A -->
+        <classtext>Choose Color</classtext>
+        <orderby>1</orderby>
+        <avail>Y</avail>
+        
+          <option>
+            <option_name>Red</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>1</option_orderby>
+            <option_avail>Y</option_avail>
+          </option>
+          <option>
+            <option_name>Green</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>2</option_orderby>
+            <option_avail>Y</option_avail>
+          </option>
+          <option>
+            <option_name>Blue</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>3</option_orderby>
+            <option_avail>Y</option_avail>
+          </option>
+        
+      </product_option>
+
+      <product_option>
+        <class>Size</class>
+        <type></type>
+        <classtext>Choose Size</classtext>
+        <orderby>2</orderby>
+        <avail>Y</avail>
+        
+          <option>
+            <option_name>L</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>1</option_orderby>
+            <option_avail>Y</option_avail>            
+          </option>
+          <option>
+            <option_name>XL</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>2</option_orderby>
+            <option_avail>Y</option_avail>            
+          </option>
+	  <option>
+            <option_name>XXL</option_name>
+            <price_modifier>0</price_modifier>
+            <modifier_type></modifier_type>
+            <option_orderby>3</option_orderby>
+            <option_avail>Y</option_avail>            
+          </option>
+      </product_option>
+
+    </product_options>
+    <variants>
+	<variant>
+	    <productcode>MPX002_1</productcode>
+	    <weight>11</weight>
+	    <avail>91</avail>
+	    <default>N</default>
+	    <!--<image>http://www.womanaroundtown.com/wp-content/uploads/2010/10/shoe-store-520x344.jpg</image>-->
+	    <option>Red</option>
+	    <option>L</option>
+	    <price>1.10</price>
+	</variant>
+	<variant>
+	  <productcode>MPX002_2</productcode>
+	  <weight>12</weight>
+	    <avail>92</avail>
+	    <default>N</default>
+	    <!--<image>http://www.healingfeet.com/blog/wp-content/uploads/2012/02/women-trying-shoes.jpg</image>-->
+	    <option>Red</option>
+	    <option>XL</option>
+	    <price>1.20</price>
+	</variant>
+	<variant>
+	    <productcode>MPX002_3</productcode>
+	    <weight>13</weight>
+	    <avail>93</avail>
+	    <default>N</default>
+	    <!--<image>http://www.shoesoftheday.nl/wp-content/uploads/2012/12/shopping_for_shoes_sbvqr.jpg</image>-->
+	    <option>Red</option>
+	    <option>XXL</option>
+	    <price>1.30</price>
+	</variant>
+	<variant>
+	  <productcode>MPX002_4</productcode>
+	    <weight>14</weight>
+	    <avail>94</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Green</option>
+	    <option>L</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX002_5</productcode>
+	    <weight>14</weight>
+	    <avail>95</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Green</option>
+	    <option>XL</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX002_6</productcode>
+	    <weight>14</weight>
+	    <avail>96</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Green</option>
+	    <option>XXL</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX002_7</productcode>
+	    <weight>14</weight>
+	    <avail>97</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Blue</option>
+	    <option>L</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX002_8</productcode>
+	    <weight>14</weight>
+	    <avail>98</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Blue</option>
+	    <option>XL</option>
+	    <price>1.40</price>
+	</variant>
+	<variant>
+	  <productcode>MPX002_9</productcode>
+	    <weight>14</weight>
+	    <avail>99</avail>
+	    <default>N</default>
+	    <image></image>
+	    <option>Blue</option>
+	    <option>XXL</option>
+	    <price>1.40</price>
+	</variant>
+    </variants>	    
+    
+    
+  </product>
+</products>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<products module="invprice">
+<product>
+<productcode>00045</productcode>
+<qty>45</qty>
+<price>45.0</price>
+</product>
+
+<product>
+<productcode>SP001</productcode>
+<qty>199</qty>
+<price>19.9</price>
+</product>
+
+<product>
+<productcode>Cyclone Cup (Black)</productcode>
+<qty>21</qty>
+<price>2.1</price>
+</product>
+
+<product>
+<productcode>MPX002_4</productcode>
+<qty>24</qty>
+<price>2.4</price>
+</product>
+</products>
