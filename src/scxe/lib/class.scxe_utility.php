@@ -25,11 +25,11 @@ class SimpleXMLExtended extends SimpleXMLElement {
 
     return $new_child;
   }
-  
+
 }
 
 class scxe_utility {
-    
+
     public function getPluginVersion()
     {
         return '2.5.4.0';
@@ -43,7 +43,7 @@ class scxe_utility {
                 . "<php_version>" . PHP_VERSION . "</php_version>"
                 . "</channel>";
     }
-    
+
     public static function cleanName($text)
     {
         $text = str_replace("Â", "", $text);
@@ -133,26 +133,26 @@ class scxe_utility {
         $text = str_replace("Ñ", "N", $text);
         $text = str_replace("É", "", $text); //added
         //
-        
+
         // ---- 2.2.0.0 -- First decode the text
         $text = mb_convert_encoding($text, 'ISO-8859-1', 'UTF-8');
-        
+
         //2) Translation CP1252. &ndash; => -
         $trans = array();
-        $trans['&sbquo;'] = '&#x82;';    // Single Low-9 Quotation Mark 
-        $trans['&mdash;'] = '&#x97;';    // Latin Small Letter F With Hook 
-        $trans['&ndash;'] = '&#x97;';    // Double Low-9 Quotation Mark 
-        $trans['&hellip;'] = '&#8230;';    // Horizontal Ellipsis 
-        $trans['&circ;'] = '&#8853;';    // Modifier Letter Circumflex Accent 
-        $trans['&tilde;'] = '&#732;';    // Small Tilde 
-        $trans['&trade;'] = '&#174;';    // Trade Mark Sign 
+        $trans['&sbquo;'] = '&#x82;';    // Single Low-9 Quotation Mark
+        $trans['&mdash;'] = '&#x97;';    // Latin Small Letter F With Hook
+        $trans['&ndash;'] = '&#x97;';    // Double Low-9 Quotation Mark
+        $trans['&hellip;'] = '&#8230;';    // Horizontal Ellipsis
+        $trans['&circ;'] = '&#8853;';    // Modifier Letter Circumflex Accent
+        $trans['&tilde;'] = '&#732;';    // Small Tilde
+        $trans['&trade;'] = '&#174;';    // Trade Mark Sign
         $trans['&nbsp;'] = '&#xA0;';
         $trans['&ldquo;'] = '&#x93;'; // Left Double Quote
         $trans['&rdquo;'] = '&#x94;'; // right Double Quote
         $trans['&eacute;'] = '&#201;'; // right Double Quote
         $trans['&acute;'] = '&#201;';
 
-        $trans['&euro;'] = '&#8364;';    // euro currency symbol 
+        $trans['&euro;'] = '&#8364;';    // euro currency symbol
         $trans['&rsquo;'] = '&#x92;';
         $trans['&lsquo;'] = '&#x91;';
         $trans['&agrave;'] = '&#192;';
@@ -174,13 +174,13 @@ class scxe_utility {
         //$text = html_entity_decode($text);
         // 5) remove Windows-1252 symbols like "TradeMark", "Euro"...
         //$text = preg_replace('/[^(\x20-\x7F)]*/', '', $text);
-        
+
         // // ---- 2.2.0.0 -- From xml spec valid chars:
         // #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]
         // any Unicode character, excluding the surrogate blocks, FFFE, and FFFF.
         $text = preg_replace('/[^\x09\x0A\x0D\x20-\xD7FF\xE000-\xFFFD\x10000-x10FFFF]*/', '', $text);
         //$text = preg_replace('/[^\x1D]/', '', $text);
-        
+
         $targets = array('\r\n', '\n', '\r', '\t');
         $results = array(" ", " ", " ", "");
         $text = str_replace($targets, $results, $text);
