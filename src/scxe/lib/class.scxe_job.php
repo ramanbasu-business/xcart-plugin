@@ -23,7 +23,9 @@ class scxe_job
 
     public function updateJobStatus($id, $status)
     {
-        $query = "UPDATE job SET status=" . $status . " WHERE id =" . $id;
+        $jobId = max(0, (int) $id);
+        $jobStatus = max(-1, min(2, (int) $status));
+        $query = sprintf("UPDATE job SET status=%d WHERE id=%d", $jobStatus, $jobId);
         try {
             $this->db_execute($query);
             return true;
@@ -35,7 +37,8 @@ class scxe_job
     
     public function updateJobSubmitted($id)
     {
-        $query = "UPDATE job SET status=1 WHERE id =" . $id;
+        $jobId = max(0, (int) $id);
+        $query = sprintf("UPDATE job SET status=1 WHERE id=%d", $jobId);
         try {
             $this->db_execute($query);
             return true;
@@ -47,7 +50,8 @@ class scxe_job
 
     public function updateJobCompleted($id)
     {
-        $query = "UPDATE job SET processedon=NOW(), status=2 WHERE id = '$id'";
+        $jobId = max(0, (int) $id);
+        $query = sprintf("UPDATE job SET processedon=NOW(), status=2 WHERE id=%d", $jobId);
         try {
             $this->db_execute($query);
             return true;
@@ -59,7 +63,8 @@ class scxe_job
 
     public function updateJobErrored($id)
     {
-        $query = "UPDATE job SET processedon=NOW(), status=-1 WHERE id = '$id'";
+        $jobId = max(0, (int) $id);
+        $query = sprintf("UPDATE job SET processedon=NOW(), status=-1 WHERE id=%d", $jobId);
         try {
             $this->db_execute($query);
             return true;
@@ -110,12 +115,18 @@ class scxe_job
     
     public function insertJob($submittedon, $processedon, $localfilename, $status, $logfilename, $module)
     {
+        $submittedon = preg_replace('/[^0-9:\- ]/', '', (string) $submittedon);
+        $processedon = $processedon === null ? null : preg_replace('/[^0-9:\- ]/', '', (string) $processedon);
+        $localfilename = preg_replace('/[^A-Za-z0-9_\-\.\\\/]/', '', (string) $localfilename);
+        $logfilename = preg_replace('/[^A-Za-z0-9_\-\.\\\/]/', '', (string) $logfilename);
+        $module = preg_replace('/[^A-Za-z0-9_\-]/', '', (string) $module);
+        $status = max(0, (int) $status);
+
         $query = "INSERT INTO job (id, submittedon, processedon, localfilename, status, logfilename, module) ";
         $query .= " values (NULL, '$submittedon', ";
         $query .= $processedon == null ? "NULL," : "'" . $processedon . "',";
         $query .= "'$localfilename', '$status', '$logfilename', '$module')";
-        //echo $query;
-    
+
         try {
             $this->db_execute($query);
             $lastId = $this->getMaxJobId();
@@ -138,6 +149,8 @@ class scxe_job
     
     public function getOneSubmittedJob($module)
     {
+        $module = $module === null ? null : preg_replace('/[^A-Za-z0-9_\-]/', '', (string) $module);
+
         if ($module == null) {
             $jobRow = $this->db_select("SELECT * FROM job WHERE status in (0,1) ORDER BY submittedon ASC LIMIT 0,1");
         } elseif ($module == '') {
@@ -145,12 +158,13 @@ class scxe_job
         } else {
             $jobRow = $this->db_select("SELECT * FROM job WHERE status in (0,1) and module='" . $module . "' ORDER BY submittedon ASC LIMIT 0,1");
         }
-        return $jobRow[0];
+        return isset($jobRow[0]) ? $jobRow[0] : null;
     }
 
     public function getJob($id)
     {
-        $jobRow = $this->db_select("SELECT * FROM  job WHERE id=" . $id . "");
+        $jobId = max(0, (int) $id);
+        $jobRow = $this->db_select("SELECT * FROM  job WHERE id=" . $jobId . "");
 
         if ($jobRow == null) {
             return null;
@@ -160,7 +174,8 @@ class scxe_job
     
     public function getJobs($count)
     {
-        $jobRow = $this->db_select("SELECT * FROM  job order by id desc LIMIT 0,". $count . "");
+        $jobCount = max(0, (int) $count);
+        $jobRow = $this->db_select("SELECT * FROM  job order by id desc LIMIT 0," . $jobCount . "");
         return $jobRow;
     }
     

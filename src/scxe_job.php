@@ -38,7 +38,7 @@ if ('getjob' === $_GET['method']) :
         return;
 
     $newId = !empty($qtrStrArray['id']) ? intval($qtrStrArray['id']) : 0;
-    
+
     $jobObject = new scxe_job();
     $job_row = $jobObject->getJob($newId);
     $xml = $jobObject->getJobXml2($job_row);

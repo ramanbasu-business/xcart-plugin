@@ -11,11 +11,8 @@ class scxe_encoder
     public function __construct()
     {
         $this->tripleDes = new scxe_tripledes();
-        $this->scxe_utility= new scxe_utility();
-        
-        if(isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] != ""):
-            $this->key = $_SERVER['HTTP_ORIGIN'];
-        endif;
+        $this->scxe_utility = new scxe_utility();
+        $this->key = '';
     }
 
     public function authenticate() {
@@ -91,25 +88,22 @@ class scxe_encoder
                 echo sprintf($msg, 'Required parameter "p" is missing');
                 return NULL;
             }
-            
-            
-            //call login
-            $adminPassword = trim((string)$qryStrArray2["p"]);
-            
-            // 22.4.0  added Raman Oct 30, 2017.
-            // If key is passed in host key "HTTP_ORIGIN", but Url is not fully encrypted, 
-            // we should decrypt the "p" or password only.
-            if($this->key != "" && $this->encryption==0):
-                $adminPassword = $this->decrypt($adminPassword);
-                //echo $adminPassword;
-            endif;
-            //echo $this->key;
-            
+
+            $email = trim((string) $qryStrArray2["u"]);
+            $email = preg_replace('/[\x00-\x1F\x7F]/', '', $email);
+            if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                echo sprintf($msg, 'Invalid user');
+                return NULL;
+            }
+
+            $adminPassword = trim((string) $qryStrArray2["p"]);
             $adminPassword = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $adminPassword);
-            //iconv(mb_detect_encoding($adminPassword, mb_detect_order(), true), "UTF-8", $adminPassword);
-            //$adminPassword = iconv('utf-16', 'utf-8', $adminPassword);
-            
-            if ($this->dbLogin($qryStrArray2["u"], $adminPassword)) {
+            if (strlen($adminPassword) === 0 || strlen($adminPassword) > 255) {
+                echo sprintf($msg, 'Invalid password');
+                return NULL;
+            }
+
+            if ($this->dbLogin($email, $adminPassword)) {
                 return $qryStrArray2;
             } else {
                 echo (sprintf($msg, "Authentications failed"));
