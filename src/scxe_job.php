@@ -6,8 +6,7 @@
  * @category   X-Cart
  * @package    X-Cart
  * @subpackage Plugin
- * @author     Raman Basu <raman@sellercloud.com>
- * @copyright  Copyright (c) 2014 SellerCloud
+ * @author     Raman Basu <ramanbasu.business@gmail.com>
  * @version    5.0
  * @link       http://www.x-cart.com/
  * @see        ____file_see____

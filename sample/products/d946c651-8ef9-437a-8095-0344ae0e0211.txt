@@ -54,7 +54,7 @@
 <manufacturerid>0</manufacturerid>
 <manufacturer>Unknown</manufacturer>
 <generate_thumbnail>Y</generate_thumbnail>
-<image>http://tr.cwa.sellercloud.com/images/products/PA-250-NV/705d351d-97aa-42e1-97b6-ce7c708d9bee.jpg</image>
+<image>https://example.com/images/placeholder-product.jpg</image>
 <product_options>
 <product_option>
 <class>SIZE</class>
