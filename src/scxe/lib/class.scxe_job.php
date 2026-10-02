@@ -34,7 +34,7 @@ class scxe_job
             return false;
         }
     }
-    
+
     public function updateJobSubmitted($id)
     {
         $jobId = max(0, (int) $id);
@@ -88,7 +88,7 @@ class scxe_job
 	)';
         $this->db_execute($q);
     }
-    
+
     public function db_execute($query)
     {
         $dbConnection = \XLite\Core\Database::getEM()->getConnection();
@@ -98,12 +98,12 @@ class scxe_job
         }
         unset($dbConnection);
     }
-    
+
     public function db_select($sql)
     {
         $dbConnection = \XLite\Core\Database::getEM()->getConnection();
         $dbConnection->beginTransaction();
-        
+
         $statement = $dbConnection->query($sql);
         $rows = $statement->fetchAll(\PDO::FETCH_BOTH);
         $statement->closeCursor();
@@ -112,7 +112,7 @@ class scxe_job
         $dbConnection->commit();
         return $rows;
     }
-    
+
     public function insertJob($submittedon, $processedon, $localfilename, $status, $logfilename, $module)
     {
         $submittedon = preg_replace('/[^0-9:\- ]/', '', (string) $submittedon);
@@ -146,7 +146,7 @@ class scxe_job
             return 0;
         }
     }
-    
+
     public function getOneSubmittedJob($module)
     {
         $module = $module === null ? null : preg_replace('/[^A-Za-z0-9_\-]/', '', (string) $module);
@@ -171,14 +171,14 @@ class scxe_job
         }
         return $jobRow[0];
     }
-    
+
     public function getJobs($count)
     {
         $jobCount = max(0, (int) $count);
         $jobRow = $this->db_select("SELECT * FROM  job order by id desc LIMIT 0," . $jobCount . "");
         return $jobRow;
     }
-    
+
     public function printJobXmlError($err)
     {
         $xml_output = "<?xml version=\"1.0\"?>";
@@ -260,7 +260,7 @@ class scxe_job
             fwrite($fp, "Allow from all");
             fclose($fp);
         }
-    
+
         return $_filePath;
     }
 

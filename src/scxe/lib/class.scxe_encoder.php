@@ -3,7 +3,7 @@
 class scxe_encoder
 {
     private $encryption = 0;
-    private $key; 
+    private $key;
     private $tripleDes;
     private $scxe_utility = null;
     private $verbose = 0;
@@ -19,14 +19,14 @@ class scxe_encoder
         /*         * *******************************************************
          * 	Query string validation
          * ******************************************************* */
-        
+
         $this->encryption = 0;
         $qryStrArray = array();
         $q = $_SERVER["QUERY_STRING"];
-        
+
         parse_str($q, $qryStrArray);
         //var_dump($qryStrArray);
-        
+
         if(count($qryStrArray)==1):
             reset($qryStrArray);
             $first_key = key($qryStrArray);
@@ -34,7 +34,7 @@ class scxe_encoder
                 $this->encryption = 1;
             endif;
         endif;
-        
+
         //var_dump($this->encryption);
         $this->verbose = 0;
         $qryStrArray2 = $this->validateLogin();
@@ -48,16 +48,16 @@ class scxe_encoder
         /*         * ******************************************************** */
         //*	@ End of Query string validation
     }
-    
+
     public function validateLogin() {
         $msg = "<?xml version=\"1.0\"?><response>"
                 . $this->scxe_utility->getVersionXml()
                 . "<status>failure</status><message>%s</message></response>";
         try {
             $qryStrArray2 = $this->getQueryStringArrayByDecryption();
-            
-            
-            
+
+
+
             if ($qryStrArray2 == NULL || empty($qryStrArray2)) {
                 echo sprintf($msg, "invalid login");
                 return NULL;
@@ -114,11 +114,11 @@ class scxe_encoder
             return NULL;
         }
     }
-    
+
     public function getQueryStringArrayByDecryption() {
         $qryStrArray = array();
         $q = $_SERVER["QUERY_STRING"];
-        
+
 
         if (empty($q)) {
             return NULL;
@@ -127,11 +127,11 @@ class scxe_encoder
         //if ($this->verbose == 1) {
         //    echo '<br>q before url decode ' . $q;
         //}
-        
-        // cannot urldecode. each query string param can contain ? and & characters. If 
+
+        // cannot urldecode. each query string param can contain ? and & characters. If
         // we decode now, additional element may be created in the array.
         //$q = urldecode($q);
-        
+
         //if ($this->verbose == 1) {
         //    echo '<br>q after url decode ' . $q;
         //}
@@ -145,16 +145,16 @@ class scxe_encoder
                 //if ($this->verbose == 1) {
                 //    echo ' decrypted string ' . $strDecrypted;
                 //}
-                
+
                 if (!empty($strDecrypted)):
                     $qryString = "".$strDecrypted;
-                    
+
                     // removed Nov 13, 2017
                     //$qryString = urldecode($qryString);
                 endif;
                 $qryString = $this->cleanString($qryString);
                 parse_str($qryString, $qryStrArray);
-                
+
             else:
                 parse_str($q, $qryStrArray);
                 //var_dump($qryStrArray);
@@ -164,14 +164,14 @@ class scxe_encoder
             // added Nov 13, 2017
             $qryStrArray = array_map(function($val) { return urldecode($val); }, $qryStrArray);
             $qryStrArray = $this->makeParamLower($qryStrArray);
-            
+
             return $qryStrArray;
         } catch (Exception $ex) {
             echo "<response><status>failure</status><message>" . $ex->getMessage() . "</message></response>";
             return $qryStrArray;
         }
     }
-    
+
     function encrypt($string) {
         $phpEncrypted = $this->tripleDes->Encrypt($string, $this->key);
         return $phpEncrypted;
@@ -200,14 +200,14 @@ class scxe_encoder
         //$profile = \XLite\Core\Auth::getInstance()->loginAdministrator($username, $password);
         //$profile = \XLite\Core\Database::getRepo('XLite\Model\Profile')->findByLoginPassword($username, null, 0);
         list($profile, $result) = \XLite\Core\Auth::getInstance()->checkLoginPassword($email, $password);
-        
+
         if (isset($profile) && $result === true) {
             $isAdmin = \XLite\Core\Auth::getInstance()->isAdmin($profile);
             $allow_login = $isAdmin;
         }
-                
+
         return $allow_login;
     }
 
-    
+
 }

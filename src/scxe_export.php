@@ -21,8 +21,8 @@ require_once LC_DIR_ROOT . 'scxe/lib/class.scxe_export.php';
 
 if ('test' === $_GET['method']) {
     echo '<h1>TEST METHOD</h1>';
-    //$remoteResource= \XLite\Core\RemoteResource\RemoteResourceFactory::getRemoteResourceByURL
-    //("https://ce.cwa.sellercloud.com/images/products/251822.jpg");
+    //$remoteResource = \XLite\Core\RemoteResource\RemoteResourceFactory::getRemoteResourceByURL(
+    //    "https://example.com/images/placeholder-product.jpg");
     $remoteResource = \XLite\Core\RemoteResource\RemoteResourceFactory::getRemoteResourceByURL(
             "https://upload.wikimedia.org/wikipedia/en/a/a8/41_-_A_Portrait_of_My_Father.jpg");
     var_dump($remoteResource);
@@ -152,10 +152,9 @@ if (in_array($qtrStrArray['method'], array('invprice', 'products', 'categories',
         $_list = null;
         //var_dump( func_scxe_export_get_order_status() );
     } elseif ('orders' === $qtrStrArray['method']) {
-        //http://www.localhost.com/xcart460goldplus/scxe_export.php?method=fullorders
-        //http://www.localhost.com/xc5/scxe_export.php?method=orders&ignorelogin=1&from=2013-07-23&to=2013-07-23
-        //http://www.localhost.com/xcart460goldplus/scxe_export.php?method=fullorders&orderid=12
-        //http://www.localhost.com/xcart514/scxe_export.php?method=orders&from=2013-03-05&to=2014-03-06
+        // Example endpoint patterns only:
+        // https://example.com/scxe_export.php?method=orders&from=2024-01-01&to=2024-01-31
+        // https://example.com/scxe_export.php?method=fullorders&orderid=12
 
         $_order_orderid = !empty($qtrStrArray['orderid']) ? ($qtrStrArray['orderid']) : "";
         $_order_from_date = !empty($qtrStrArray['from']) ? ($qtrStrArray['from']) : ""; //2013-06-26T07:45:56+02:00
